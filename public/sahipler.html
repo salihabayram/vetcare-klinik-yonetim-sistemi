@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetCare+ | Hayvan Sahipleri</title>
+
+    <link rel="stylesheet" href="sahipler.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <aside class="sidebar">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-paw"></i>
+                </div>
+                <div>
+                    <h2>VetCare+</h2>
+                    <p>Klinik Takip Sistemi</p>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="anasayfa.html" class="menu-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Anasayfa</span>
+                </a>
+
+                <a href="sahipler.html" class="menu-item active">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Hayvan Sahipleri</span>
+                </a>
+
+                <a href="hayvanlar.html" class="menu-item">
+                    <i class="fa-solid fa-dog"></i>
+                    <span>Evcil Hayvanlar</span>
+                </a>
+
+                <a href="randevular.html" class="menu-item">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>Randevular</span>
+                </a>
+
+                <a href="muayeneler.html" class="menu-item">
+                    <i class="fa-solid fa-stethoscope"></i>
+                    <span>Muayeneler</span>
+                </a>
+
+                <a href="asilar.html" class="menu-item">
+                    <i class="fa-solid fa-syringe"></i>
+                    <span>Aşı Takibi</span>
+                </a>
+
+                <a href="tedaviler.html" class="menu-item">
+                    <i class="fa-solid fa-pills"></i>
+                    <span>Tedavi / İlaç</span>
+                </a>
+
+                <a href="odemeler.html" class="menu-item">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <span>Ödemeler</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <p>Bugün</p>
+                <strong>26 Nisan 2026</strong>
+            </div>
+        </aside>
+
+        <main class="main-content">
+
+            <header class="topbar">
+                <div class="page-title">
+                    <h1>Hayvan Sahipleri</h1>
+                    <p>Klinikte kayıtlı hayvan sahiplerini görüntüleyebilir ve yönetebilirsiniz.</p>
+                </div>
+
+                <div class="topbar-actions">
+                    <button class="notification-btn">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notification-dot"></span>
+                    </button>
+
+                    <div class="user-card">
+                        <div class="user-avatar">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <div>
+                            <strong>Dr. Saliha</strong>
+                            <p>Veteriner Hekim</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="summary-grid">
+                <div class="summary-card">
+                    <div class="summary-icon green">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div>
+                        <h3>84</h3>
+                        <p>Toplam Sahip</p>
+                    </div>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon blue">
+                        <i class="fa-solid fa-paw"></i>
+                    </div>
+                    <div>
+                        <h3>128</h3>
+                        <p>Kayıtlı Hayvan</p>
+                    </div>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon orange">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </div>
+                    <div>
+                        <h3>6</h3>
+                        <p>Bu Ay Yeni Kayıt</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="panel">
+
+                <div class="panel-header">
+                    <div>
+                        <h2>Sahip Listesi</h2>
+                        <p>Hayvan sahiplerinin iletişim ve kayıt bilgileri</p>
+                    </div>
+
+                    <button class="primary-btn">
+                        <i class="fa-solid fa-plus"></i>
+                        Yeni Sahip Ekle
+                    </button>
+                </div>
+
+                <div class="filter-row">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Sahip adı, telefon veya e-posta ara...">
+                    </div>
+
+                    <select>
+                        <option>Tüm Kayıtlar</option>
+                        <option>Aktif Sahipler</option>
+                        <option>Pasif Sahipler</option>
+                    </select>
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sahip Adı</th>
+                                <th>Telefon</th>
+                                <th>E-posta</th>
+                                <th>Kayıtlı Hayvan</th>
+                                <th>Durum</th>
+                                <th>İşlemler</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="sahiplerTablo">
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="sahipler.js"></script>
+</body>
+
+</html>

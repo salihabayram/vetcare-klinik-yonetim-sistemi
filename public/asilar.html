@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetCare+ | Aşı Takibi</title>
+
+    <link rel="stylesheet" href="asilar.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <aside class="sidebar">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-paw"></i>
+                </div>
+                <div>
+                    <h2>VetCare+</h2>
+                    <p>Klinik Takip Sistemi</p>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="anasayfa.html" class="menu-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Anasayfa</span>
+                </a>
+
+                <a href="sahipler.html" class="menu-item">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Hayvan Sahipleri</span>
+                </a>
+
+                <a href="hayvanlar.html" class="menu-item">
+                    <i class="fa-solid fa-dog"></i>
+                    <span>Evcil Hayvanlar</span>
+                </a>
+
+                <a href="randevular.html" class="menu-item">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>Randevular</span>
+                </a>
+
+                <a href="muayeneler.html" class="menu-item">
+                    <i class="fa-solid fa-stethoscope"></i>
+                    <span>Muayeneler</span>
+                </a>
+
+                <a href="asilar.html" class="menu-item active">
+                    <i class="fa-solid fa-syringe"></i>
+                    <span>Aşı Takibi</span>
+                </a>
+
+                <a href="tedaviler.html" class="menu-item">
+                    <i class="fa-solid fa-pills"></i>
+                    <span>Tedavi / İlaç</span>
+                </a>
+
+                <a href="odemeler.html" class="menu-item">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <span>Ödemeler</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <p>Bugün</p>
+                <strong>26 Nisan 2026</strong>
+            </div>
+        </aside>
+
+        <main class="main-content">
+
+            <header class="topbar">
+                <div class="page-title">
+                    <h1>Aşı Takibi</h1>
+                    <p>Evcil hayvanların yapılan, yaklaşan ve geciken aşı kayıtlarını buradan takip edebilirsiniz.</p>
+                </div>
+
+                <div class="topbar-actions">
+                    <button class="notification-btn">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notification-dot"></span>
+                    </button>
+
+                    <div class="user-card">
+                        <div class="user-avatar">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <div>
+                            <strong>Dr. Saliha</strong>
+                            <p>Veteriner Hekim</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="summary-grid">
+                <div class="summary-card">
+                    <div class="summary-icon blue">
+                        <i class="fa-solid fa-syringe"></i>
+                    </div>
+                    <div>
+                        <h3>92</h3>
+                        <p>Toplam Aşı Kaydı</p>
+                    </div>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon orange">
+                        <i class="fa-solid fa-hourglass-half"></i>
+                    </div>
+                    <div>
+                        <h3>8</h3>
+                        <p>Yaklaşan Aşı</p>
+                    </div>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon green">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div>
+                        <h3>76</h3>
+                        <p>Tamamlanan</p>
+                    </div>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon red">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <div>
+                        <h3>3</h3>
+                        <p>Geciken Aşı</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-grid">
+
+                <div class="panel vaccine-panel">
+                    <div class="panel-header">
+                        <div>
+                            <h2>Aşı Kayıtları</h2>
+                            <p>Hayvanlara ait aşı adı, tarih ve sonraki doz bilgileri</p>
+                        </div>
+
+                        <button class="primary-btn">
+                            <i class="fa-solid fa-plus"></i>
+                            Yeni Aşı Kaydı
+                        </button>
+                    </div>
+
+                    <div class="filter-row">
+                        <div class="search-box">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" placeholder="Hayvan, sahip veya aşı adı ara...">
+                        </div>
+
+                        <select>
+                            <option>Tüm Aşılar</option>
+                            <option>Yaklaşan</option>
+                            <option>Tamamlanan</option>
+                            <option>Geciken</option>
+                        </select>
+                    </div>
+
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Hayvan</th>
+                                    <th>Sahip</th>
+                                    <th>Aşı Adı</th>
+                                    <th>Yapılma Tarihi</th>
+                                    <th>Sonraki Doz</th>
+                                    <th>Durum</th>
+                                    <th>İşlemler</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="asilarTablo">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <aside class="right-column">
+
+                    <div class="panel">
+                        <h2>Aşı Takvimi Özeti</h2>
+
+                        <div class="calendar-summary">
+                            <div class="calendar-item">
+                                <div class="calendar-icon orange">
+                                    <i class="fa-solid fa-hourglass-half"></i>
+                                </div>
+                                <div>
+                                    <strong>Bu Hafta</strong>
+                                    <p>4 aşı planlandı</p>
+                                </div>
+                            </div>
+
+                            <div class="calendar-item">
+                                <div class="calendar-icon green">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                                <div>
+                                    <strong>Bu Ay</strong>
+                                    <p>18 aşı tamamlandı</p>
+                                </div>
+                            </div>
+
+                            <div class="calendar-item">
+                                <div class="calendar-icon red">
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
+                                </div>
+                                <div>
+                                    <strong>Gecikenler</strong>
+                                    <p>3 aşı için takip gerekli</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel notes-panel">
+                        <h2>Aşı Notları</h2>
+
+                        <div class="note-item">
+                            <i class="fa-solid fa-bell"></i>
+                            <p>Yaklaşan aşılar için hayvan sahibine mobil bildirim gönderilir.</p>
+                        </div>
+
+                        <div class="note-item">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <p>Sonraki doz tarihi veteriner tarafından muayene sonrası güncellenebilir.</p>
+                        </div>
+
+                        <div class="note-item">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                            <p>Geciken aşılar sistemde öncelikli olarak listelenir.</p>
+                        </div>
+                    </div>
+
+                </aside>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="asilar.js"></script>
+</body>
+
+</html>

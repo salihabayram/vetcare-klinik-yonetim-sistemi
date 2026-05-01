@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetCare+ | Tedavi / İlaç</title>
+
+    <link rel="stylesheet" href="tedaviler.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <aside class="sidebar">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-paw"></i>
+                </div>
+                <div>
+                    <h2>VetCare+</h2>
+                    <p>Klinik Takip Sistemi</p>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="anasayfa.html" class="menu-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Anasayfa</span>
+                </a>
+
+                <a href="sahipler.html" class="menu-item">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Hayvan Sahipleri</span>
+                </a>
+
+                <a href="hayvanlar.html" class="menu-item">
+                    <i class="fa-solid fa-dog"></i>
+                    <span>Evcil Hayvanlar</span>
+                </a>
+
+                <a href="randevular.html" class="menu-item">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>Randevular</span>
+                </a>
+
+                <a href="muayeneler.html" class="menu-item">
+                    <i class="fa-solid fa-stethoscope"></i>
+                    <span>Muayeneler</span>
+                </a>
+
+                <a href="asilar.html" class="menu-item">
+                    <i class="fa-solid fa-syringe"></i>
+                    <span>Aşı Takibi</span>
+                </a>
+
+                <a href="tedaviler.html" class="menu-item active">
+                    <i class="fa-solid fa-pills"></i>
+                    <span>Tedavi / İlaç</span>
+                </a>
+
+                <a href="odemeler.html" class="menu-item">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <span>Ödemeler</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <p>Bugün</p>
+                <strong>26 Nisan 2026</strong>
+            </div>
+        </aside>
+
+        <main class="main-content">
+
+            <header class="topbar">
+                <div class="page-title">
+                    <h1>Tedavi / İlaç Takibi</h1>
+                    <p>Hayvanlara uygulanan tedavi süreçlerini, ilaç dozlarını ve kullanım sürelerini takip
+                        edebilirsiniz.</p>
+                </div>
+
+                <div class="topbar-actions">
+                    <button class="notification-btn">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notification-dot"></span>
+                    </button>
+
+                    <div class="user-card">
+                        <div class="user-avatar">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <div>
+                            <strong>Dr. Saliha</strong>
+                            <p>Veteriner Hekim</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="summary-grid">
+                <div class="summary-card">
+                    <div class="summary-icon blue">
+                        <i class="fa-solid fa-pills"></i>
+                    </div>
+                    <div>
+                        <h3>38</h3>
+                        <p>Toplam Tedavi</p>
+                    </div>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon orange">
+                        <i class="fa-solid fa-hourglass-half"></i>
+                    </div>
+                    <div>
+                        <h3>9</h3>
+                        <p>Aktif Tedavi</p>
+                    </div>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon green">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div>
+                        <h3>24</h3>
+                        <p>Tamamlanan</p>
+                    </div>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon red">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <div>
+                        <h3>5</h3>
+                        <p>Kontrol Bekleyen</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-grid">
+
+                <div class="panel treatment-panel">
+                    <div class="panel-header">
+                        <div>
+                            <h2>Tedavi ve İlaç Kayıtları</h2>
+                            <p>Hayvanlara verilen ilaç, doz ve kullanım süresi bilgileri</p>
+                        </div>
+
+                        <button class="primary-btn">
+                            <i class="fa-solid fa-plus"></i>
+                            Yeni Tedavi Kaydı
+                        </button>
+                    </div>
+
+                    <div class="filter-row">
+                        <div class="search-box">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" placeholder="Hayvan, sahip veya ilaç adı ara...">
+                        </div>
+
+                        <select>
+                            <option>Tüm Tedaviler</option>
+                            <option>Aktif</option>
+                            <option>Tamamlandı</option>
+                            <option>Kontrol Bekliyor</option>
+                        </select>
+                    </div>
+
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Hayvan</th>
+                                    <th>Sahip</th>
+                                    <th>İlaç / Tedavi</th>
+                                    <th>Doz</th>
+                                    <th>Süre</th>
+                                    <th>Durum</th>
+                                    <th>İşlemler</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="tedavilerTablo">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <aside class="right-column">
+
+                    <div class="panel">
+                        <h2>Aktif Tedaviler</h2>
+
+                        <div class="active-list">
+                            <div class="active-item">
+                                <span>5 gün</span>
+                                <div>
+                                    <strong>Boncuk</strong>
+                                    <p>Mide Koruyucu</p>
+                                </div>
+                            </div>
+
+                            <div class="active-item">
+                                <span>3 gün</span>
+                                <div>
+                                    <strong>Paşa</strong>
+                                    <p>Ağrı Kesici</p>
+                                </div>
+                            </div>
+
+                            <div class="active-item">
+                                <span>7 gün</span>
+                                <div>
+                                    <strong>Maviş</strong>
+                                    <p>Vitamin Desteği</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel notes-panel">
+                        <h2>İlaç Kullanım Notları</h2>
+
+                        <div class="note-item">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <p>İlaç dozu hayvanın kilosuna ve sağlık durumuna göre veteriner tarafından belirlenir.</p>
+                        </div>
+
+                        <div class="note-item">
+                            <i class="fa-solid fa-bell"></i>
+                            <p>Aktif tedaviler için hayvan sahibine mobil hatırlatma gönderilebilir.</p>
+                        </div>
+
+                        <div class="note-item">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <p>Tedavi tamamlandığında kontrol randevusu oluşturulabilir.</p>
+                        </div>
+                    </div>
+
+                </aside>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="tedaviler.js"></script>
+</body>
+
+</html>

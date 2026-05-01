@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetCare+ | Ödemeler</title>
+
+    <link rel="stylesheet" href="odemeler.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <aside class="sidebar">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-paw"></i>
+                </div>
+                <div>
+                    <h2>VetCare+</h2>
+                    <p>Klinik Takip Sistemi</p>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="anasayfa.html" class="menu-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Anasayfa</span>
+                </a>
+
+                <a href="sahipler.html" class="menu-item">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Hayvan Sahipleri</span>
+                </a>
+
+                <a href="hayvanlar.html" class="menu-item">
+                    <i class="fa-solid fa-dog"></i>
+                    <span>Evcil Hayvanlar</span>
+                </a>
+
+                <a href="randevular.html" class="menu-item">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>Randevular</span>
+                </a>
+
+                <a href="muayeneler.html" class="menu-item">
+                    <i class="fa-solid fa-stethoscope"></i>
+                    <span>Muayeneler</span>
+                </a>
+
+                <a href="asilar.html" class="menu-item">
+                    <i class="fa-solid fa-syringe"></i>
+                    <span>Aşı Takibi</span>
+                </a>
+
+                <a href="tedaviler.html" class="menu-item">
+                    <i class="fa-solid fa-pills"></i>
+                    <span>Tedavi / İlaç</span>
+                </a>
+
+                <a href="odemeler.html" class="menu-item active">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <span>Ödemeler</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <p>Bugün</p>
+                <strong>26 Nisan 2026</strong>
+            </div>
+        </aside>
+
+        <main class="main-content">
+
+            <header class="topbar">
+                <div class="page-title">
+                    <h1>Ödemeler</h1>
+                    <p>Muayene, aşı ve tedavi işlemlerine ait ödeme kayıtlarını buradan takip edebilirsiniz.</p>
+                </div>
+
+                <div class="topbar-actions">
+                    <button class="notification-btn">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notification-dot"></span>
+                    </button>
+
+                    <div class="user-card">
+                        <div class="user-avatar">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <div>
+                            <strong>Dr. Saliha</strong>
+                            <p>Veteriner Hekim</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+
+            <section class="content-grid">
+
+                <div class="panel payment-panel">
+                    <div class="panel-header">
+                        <div>
+                            <h2>Ödeme Kayıtları</h2>
+                            <p>Klinik işlemlerine ait ödeme ve tahsilat bilgileri</p>
+                        </div>
+
+                        <button class="primary-btn">
+                            <i class="fa-solid fa-plus"></i>
+                            Yeni Ödeme Kaydı
+                        </button>
+                    </div>
+
+                    <div class="filter-row">
+                        <div class="search-box">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" placeholder="Sahip, hayvan veya işlem ara...">
+                        </div>
+
+                        <select>
+                            <option>Tüm Ödemeler</option>
+                            <option>Ödendi</option>
+                            <option>Bekliyor</option>
+                            <option>İade</option>
+                        </select>
+                    </div>
+
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sahip</th>
+                                    <th>Hayvan</th>
+                                    <th>İşlem</th>
+                                    <th>Tutar</th>
+                                    <th>Ödeme Tarihi</th>
+                                    <th>Durum</th>
+                                    <th>İşlemler</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="odemelerTablo">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <aside class="right-column">
+
+                    <div class="panel">
+                        <h2>Bekleyen Ödemeler</h2>
+
+                        <div class="pending-list">
+                            <div class="pending-item">
+                                <span>₺450</span>
+                                <div>
+                                    <strong>Elif Yılmaz</strong>
+                                    <p>Vitamin Desteği</p>
+                                </div>
+                            </div>
+
+                            <div class="pending-item">
+                                <span>₺1.200</span>
+                                <div>
+                                    <strong>Ayşe Demir</strong>
+                                    <p>Kontrol Muayenesi</p>
+                                </div>
+                            </div>
+
+                            <div class="pending-item">
+                                <span>₺1.600</span>
+                                <div>
+                                    <strong>Mehmet Kaya</strong>
+                                    <p>Tedavi Paketi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel notes-panel">
+                        <h2>Ödeme Notları</h2>
+
+                        <div class="note-item">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <p>Bekleyen ödemeler sistemde ayrı olarak takip edilir.</p>
+                        </div>
+
+                        <div class="note-item">
+                            <i class="fa-solid fa-receipt"></i>
+                            <p>Her ödeme kaydı ilgili muayene, aşı veya tedavi işlemiyle ilişkilendirilir.</p>
+                        </div>
+
+                        <div class="note-item">
+                            <i class="fa-solid fa-bell"></i>
+                            <p>Ödeme hatırlatmaları mobil uygulama üzerinden gönderilebilir.</p>
+                        </div>
+                    </div>
+
+                </aside>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="odemeler.js"></script>
+</body>
+
+</html>

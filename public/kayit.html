@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetCare+ | Personel Kaydı</title>
+
+    <link rel="stylesheet" href="kayit.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="register-container">
+
+        <div class="register-left">
+            <div class="brand-box">
+                <div class="brand-icon">
+                    <i class="fa-solid fa-paw"></i>
+                </div>
+
+                <h1>VetCare+</h1>
+                <p>Yetkili klinik personeli için hesap oluşturma ekranı</p>
+            </div>
+
+            <div class="info-list">
+                <div class="info-item">
+                    <i class="fa-solid fa-user-doctor"></i>
+                    <span>Veteriner, sekreter ve yönetici hesapları oluşturulabilir.</span>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>Personel rolleri sistem yetkilerini belirler.</span>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-database"></i>
+                    <span>Kayıt bilgileri SQL Server veritabanına kaydedilir.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="register-right">
+
+            <form class="register-card" id="kayitForm">
+                <div class="form-header">
+                    <h2>Personel Kaydı</h2>
+                    <p>Yeni klinik personeli için kullanıcı hesabı oluşturun.</p>
+                </div>
+
+                <div class="input-group">
+                    <label for="adSoyad">Ad Soyad</label>
+                    <div class="input-box">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" id="adSoyad" placeholder="Ad soyad giriniz" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">E-posta</label>
+                    <div class="input-box">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" id="email" placeholder="ornek@vetcare.com" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="telefon">Telefon</label>
+                    <div class="input-box">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="text" id="telefon" placeholder="0555 000 00 00">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="rolId">Rol</label>
+                    <div class="input-box">
+                        <i class="fa-solid fa-user-tag"></i>
+                        <select id="rolId" required>
+                            <option value="">Rol seçiniz</option>
+                            <option value="1">Yönetici</option>
+                            <option value="2">Veteriner Hekim</option>
+                            <option value="3">Sekreter</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="sifre">Şifre</label>
+                    <div class="input-box">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="sifre" placeholder="Şifre oluşturunuz" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="sifreTekrar">Şifre Tekrar</label>
+                    <div class="input-box">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="sifreTekrar" placeholder="Şifreyi tekrar giriniz" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="register-btn">
+                    <i class="fa-solid fa-user-plus"></i>
+                    Personel Kaydı Oluştur
+                </button>
+
+                <p class="message" id="mesaj"></p>
+
+                <div class="login-link">
+                    <span>Zaten hesabınız var mı?</span>
+                    <a href="giris.html">Giriş Yap</a>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="kayit.js"></script>
+</body>
+
+</html>
